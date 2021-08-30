@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pricing component</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </header>
+      <div class="box">
+        <div class="flexbox-1">
+          <div class="pageviews"><span id="value"></span>K Pageviews</div>
+          <div class="cost"><span id="cost">$8.00</span>/month</div>
+        </div>
+        <div class="sliderContainer">
+          <input
+            type="range"
+            min="1"
+            max="1000"
+            value="1"
+            id="slideRange"
+            class="slider"
+          />
+        </div>
+        <div class="flexbox-2">
+          <label class="toggle" for="myToggle">
+            <input
+              class="toggle__input"
+              name=""
+              type="checkbox"
+              id="myToggle"
+            />
+            <div class="toggle__fill"></div>
+          </label>
+          <div class="monthly">Monthly Billing</div>
+          <div class="yearly">Yearly Billing</div>
+          <div class="discount" id="discount">25% discount</div>
+        </div>
+        <div class="flexbox-3">
+          <ul>
+            <li>Unlimited websites</li>
+            <li>100% data ownership</li>
+            <li>Email reports</li>
+          </ul>
+          <div class="trial"><a hreft="#">Start my trial</a></div>
+        </div>
+      </div>
+    </div>
+    <footer>Coded by Szymon Wróbel</footer>
+  </body>
+  <script src="main.js"></script>
+</html>
